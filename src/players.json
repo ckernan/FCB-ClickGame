@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Messi",
+        "image": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/09/21/eca6ec8a-ed9d-4adc-bafc-ee1289392382/10-MESSI-JOC.jpg",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "name": "Dembele",
+        "image": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/09/21/433a22b9-c08e-4167-9f15-96774097c027/11-DEMBELE-JOC.jpg",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "name": "Suarez",
+        "image": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/09/21/6899a482-a292-4ade-99e9-e65e7cb8df8a/09-SUAREZ-JOC.jpg",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "name": "Rakitic",
+        "image": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/09/21/1112a684-791d-47e0-9368-a9d4a6880e3c/04-RAKITIC-JOC.jpg",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "name": "Sergio",
+        "image": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/09/21/3c326e62-2c35-4d8d-9e41-972ab88ce11a/05-SERGIO-JOC.jpg",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "name":"Pique",
+        "image": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/09/21/926ab5d0-24d9-481b-a6bf-c5d84b074dd8/03-PIQUE-JOC.jpg",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "name": "Ter Stegen",
+        "image": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/09/21/73ea0517-9305-4f81-9ef7-835dd4c8be36/01_TER-STEGEN-JOC.jpg",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "name": "Coutinho",
+        "image": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/09/21/90996013-5449-4252-89b4-bc3dc9aef7c9/07-COUTINHO-JOC.jpg",
+        "clicked": false
+    },
+    {
+        "id": 9,
+        "name": "Alba",
+        "image": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/09/21/360af061-5caa-4e98-8fe2-65a3b64a36ea/18-JORDI-ALBA-JOC.jpg",
+        "clicked": false
+    },
+    {
+        "id": 10,
+        "name": "Umtiti",
+        "image": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/09/21/56631dee-affd-4e39-bb30-1bf659c9af27/23-UMTITI-JOC.jpg",
+        "clicked": false
+    },
+    {
+        "id": 11,
+        "name": "Semedo",
+        "image": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/09/21/5392cf41-64d4-4ac2-86e2-890c0a967cd4/02-SEMEDO-JOC.jpg",
+        "clicked": false
+    },
+    {
+        "id": 12,
+        "name": "Roberto",
+        "image": "https://fcbarcelona-static-files.s3.amazonaws.com/fcbarcelona/photo/2018/09/21/fd2844c3-95f2-41ea-851d-cff65c6ed036/20-SROBERTO-JOC.jpg",
+        "clicked": false
+    }
+]
