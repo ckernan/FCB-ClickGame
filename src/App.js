@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Container from './components/Container/Container';
 import PlayerCard from './components/PlayerCard/PlayerCard';
+import Footer from './components/Footer/Footer';
 import players from './players.json';
 import './App.css';
 
@@ -36,7 +37,9 @@ class App extends Component {
             />
           ))}
         </Container>
-        
+
+        <Footer />
+
       </div>
     );
   }
