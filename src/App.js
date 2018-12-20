@@ -53,11 +53,15 @@ class App extends Component {
         message: "YOU WON!!"
       });
     };
-    // this.shuffleCards();
+    this.shufflePlayers(players);
   };
 
-  shuffleCards = () => {
-
+  //Durstenfeld shuffle algorithm
+  shufflePlayers = players => {
+    for (let i = players.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [players[i], players[j]] = [players[j], players[i]];
+  }
   }
 
   resetGame = () => {
