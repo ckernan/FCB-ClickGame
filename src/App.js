@@ -8,12 +8,64 @@ import players from './players.json';
 import './App.css';
 
 class App extends Component {
+  //setting this.state
   state = {
     players,
     score: 0,
     topScore: 0,
     message: "Click an image to begin!"
+  };
+
+  handleClick = id => {
+    console.log(`${id} clicked`);
+    //Filter the this.state.players to return the player that matches the id clicked
+    const playerClicked = this.state.players.filter(player => player.id === id);
+    console.log(playerClicked);
+    //If player card has not been clicked yet, change clicked value to true. Then run handleIncrement.
+    if (playerClicked[0].clicked === false) {
+      playerClicked[0].clicked = true;
+      console.log(playerClicked);
+
+      this.handleIncrement()
+    } 
+    else {
+      // this.resetGame();
+    }
+  };
+
+  handleIncrement =() => {
+    //destructure score and top score
+    const { score, topScore } = this.state;
+    //increment score
+    const newScore = score + 1;
+    //if newScore is > topScore, reset topScore to the newScore, otherwise leave topScore as is.
+    const newTopScore = newScore > topScore ? newScore : topScore;
+    //updating state with new info
+    this.setState({
+      score: newScore,
+      topScore: newTopScore,
+      message: "You guessed correctly...Keep clicking!"
+    });
+    console.log(this.state.score)
+    //if newScore = 12 then player wins
+    if (newScore === 12) {
+      this.setState({
+        message: "YOU WON!!"
+      });
+    };
+    // this.shuffleCards();
+  };
+
+  shuffleCards = () => {
+
   }
+
+  resetGame = () => {
+
+  }
+
+
+
   render() {
     return (
       <div className="App">
