@@ -25,12 +25,17 @@ class App extends Component {
     if (playerClicked[0].clicked === false) {
       playerClicked[0].clicked = true;
       console.log(playerClicked);
-
+      //increases score by 1 pt, updates state and checks for win
       this.handleIncrement()
     } 
     else {
-      // this.resetGame();
-    }
+      //updates state for loss, shuffles player cards and resets game
+      this.setState({
+        message: "YOU LOST! Click any image to start over.",
+        score: 0
+      })
+      this.resetGame(players);
+    };
   };
 
   handleIncrement =() => {
@@ -49,10 +54,14 @@ class App extends Component {
     console.log(this.state.score)
     //if newScore = 12 then player wins
     if (newScore === 12) {
+      //update state with winning message and reset score
       this.setState({
-        message: "YOU WON!!"
+        message: "YOU WON!! Click any image to start over.",
+        score: 0
       });
+      this.resetGame()
     };
+    //shuffle cards
     this.shufflePlayers(players);
   };
 
@@ -64,8 +73,21 @@ class App extends Component {
   }
   }
 
-  resetGame = () => {
+  resetGame = players => {
+    //for each player in players array reset clicked value to false
+   this.state.players.forEach(player => player.clicked = false); 
+   console.log(this.state.players)
+    // //shuffle cards
+  //  this.shufflePlayers(this.state.players);
+    // this.setState({
+    //   score: 0,
+    //   topScore: this.state.topScore,
+    //   players: players.map(player => ({...player, clicked: false}))
 
+
+    // });
+    // players.forEach()
+    // this.shufflePlayers(players);
   }
 
 
