@@ -34,7 +34,8 @@ class App extends Component {
         message: "YOU LOST! Click any image to start over.",
         score: 0
       })
-      this.resetGame(players);
+      this.resetGame(this.state.players);
+      this.shufflePlayers(this.state.players);
     };
   };
 
@@ -59,10 +60,10 @@ class App extends Component {
         message: "YOU WON!! Click any image to start over.",
         score: 0
       });
-      this.resetGame()
+      this.resetGame(this.state.players)
     };
     //shuffle cards
-    this.shufflePlayers(players);
+    this.shufflePlayers(this.state.players);
   };
 
   //Durstenfeld shuffle algorithm
@@ -74,20 +75,11 @@ class App extends Component {
   }
 
   resetGame = players => {
-    //for each player in players array reset clicked value to false
-   this.state.players.forEach(player => player.clicked = false); 
-   console.log(this.state.players)
-    // //shuffle cards
-  //  this.shufflePlayers(this.state.players);
-    // this.setState({
-    //   score: 0,
-    //   topScore: this.state.topScore,
-    //   players: players.map(player => ({...player, clicked: false}))
-
-
-    // });
-    // players.forEach()
-    // this.shufflePlayers(players);
+    //update state; map over players array and set clicked values back to false
+    this.setState({
+      score: 0,
+      players: players.map(player => ({...player, clicked: false}))
+    });
   }
 
 
