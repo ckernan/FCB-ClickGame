@@ -1,5 +1,5 @@
 # FCB ClickGame
-FCB Click Game is a F&uacute;tbol Club Barcelona themed memory game built using React ([Create React App](https://github.com/facebook/create-react-app)).  The objective of the game is to click each of the 12 player images only once. Each time the user clicks an image the score will increase by 1 point. If the user clicks any image twice, the game will reset and the score will return to 0. Access the deployed app [here]().
+FCB Click Game is a F&uacute;tbol Club Barcelona themed memory game built using React ([Create React App](https://github.com/facebook/create-react-app)).  The objective of the game is to click each of the 12 player images only once. Each time the user clicks an image the score will increase by 1 point. If the user clicks any image twice, the game will reset and the score will return to 0. Access the deployed app [here](https://ckernan.github.io/FCB-ClickGame/).
 
 
 ## How it Works
